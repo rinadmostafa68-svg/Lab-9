@@ -22,7 +22,7 @@ public class Output {
         for (DuplicateResult r : rows) {
             out.append(r.toString()).append(System.lineSeparator());
         }
-
+         System.out.println("               Invalid");
         out.append("------------------------------------------").append(System.lineSeparator());
 
         List<DuplicateResult> cols = grouped.getOrDefault(DuplicateResult.RegionType.COL, Collections.emptyList());
