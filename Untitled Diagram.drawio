@@ -1,0 +1,204 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Page-1" id="2XgGw7gUomK8Gk0_bfWP">
+    <mxGraphModel dx="1273" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BGNALpCuS_oQVn72QMfp-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;div&gt;Verifierinterface&lt;/div&gt;" vertex="1">
+          <mxGeometry height="76" width="290" x="270" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-6" parent="BGNALpCuS_oQVn72QMfp-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Verify(SudokuBoard board): List&amp;lt;DuplicateResult&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="290" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SequentialVerifier" vertex="1">
+          <mxGeometry height="104" width="170" x="100" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-11" parent="BGNALpCuS_oQVn72QMfp-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Verfiy(board: sudokoBoard)" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-12" parent="BGNALpCuS_oQVn72QMfp-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-13" parent="BGNALpCuS_oQVn72QMfp-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="170" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-14" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="threeModeVerifier" vertex="1">
+          <mxGeometry height="78" width="170" x="340" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-15" parent="BGNALpCuS_oQVn72QMfp-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ verify(board:SudokuBoard)" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-16" parent="BGNALpCuS_oQVn72QMfp-14" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-worker threads (row/column/)" vertex="1">
+          <mxGeometry height="26" width="170" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-18" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TwentySevenModeVerifier" vertex="1">
+          <mxGeometry height="104" width="230" x="555" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-19" parent="BGNALpCuS_oQVn72QMfp-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ Verfiy(board: sudokuBoard)" vertex="1">
+          <mxGeometry height="26" width="230" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-17" parent="BGNALpCuS_oQVn72QMfp-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="230" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-21" parent="BGNALpCuS_oQVn72QMfp-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ field: type" vertex="1">
+          <mxGeometry height="26" width="230" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-22" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="VerifierFactory" vertex="1">
+          <mxGeometry height="52" width="260" x="55" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-23" parent="BGNALpCuS_oQVn72QMfp-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getVerifier(mode:int):VerifierInterface" vertex="1">
+          <mxGeometry height="26" width="260" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-32" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DuplicateResult" vertex="1">
+          <mxGeometry height="124" width="300" x="490" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-33" parent="BGNALpCuS_oQVn72QMfp-32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- value: int&lt;div&gt;- positions: List&amp;lt;integer&amp;gt;&lt;/div&gt;&lt;div&gt;- type: regionType&lt;/div&gt;&lt;div&gt;- regionIndex: int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-34" parent="BGNALpCuS_oQVn72QMfp-32" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-35" parent="BGNALpCuS_oQVn72QMfp-32" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ toString(): String" vertex="1">
+          <mxGeometry height="26" width="300" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-40" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Output" vertex="1">
+          <mxGeometry height="80" width="270" x="90" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-42" parent="BGNALpCuS_oQVn72QMfp-40" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-43" parent="BGNALpCuS_oQVn72QMfp-40" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ formatResults(results:List&amp;lt;DuplicateResult&amp;gt;)&lt;div&gt;+ printResults(results:List&amp;lt;DuplicateResult&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="46" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-44" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="main" vertex="1">
+          <mxGeometry height="160" width="310" x="390" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-46" parent="BGNALpCuS_oQVn72QMfp-44" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-47" parent="BGNALpCuS_oQVn72QMfp-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ main(Sring[] args)&lt;div&gt;+ readBoard(): sudokuBoard&lt;/div&gt;&lt;div&gt;+ runVerification(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="126" width="310" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-48" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="sudokuBoard" vertex="1">
+          <mxGeometry height="110" width="210" x="40" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-49" parent="BGNALpCuS_oQVn72QMfp-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- board: int [ ][ ]" vertex="1">
+          <mxGeometry height="26" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-50" parent="BGNALpCuS_oQVn72QMfp-48" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="210" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-51" parent="BGNALpCuS_oQVn72QMfp-48" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ sudokuBoard(data:int [ ][ ])&lt;div&gt;+ get(): int [ ][ ]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="210" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-52" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-10" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.325;exitY=-0.029;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.49;entryY=1.192;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="300" y="270" as="sourcePoint" />
+            <mxPoint x="460" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-53" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-14" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.567;entryY=0.915;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="300" y="270" as="sourcePoint" />
+            <mxPoint x="460" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-54" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-18" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.68;entryY=1.162;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="300" y="270" as="sourcePoint" />
+            <mxPoint x="460" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-55" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-47" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=-0.009;exitY=0.227;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=1.308;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-49" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="560" as="sourcePoint" />
+            <mxPoint x="300" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-56" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-44" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="BGNALpCuS_oQVn72QMfp-23" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="140" y="560" as="sourcePoint" />
+            <mxPoint x="300" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-57" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-44" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1.011;entryY=0.054;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="550" />
+              <mxPoint x="830" y="80" />
+            </Array>
+            <mxPoint x="570" y="350" as="sourcePoint" />
+            <mxPoint x="830" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-58" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-22" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.153;entryY=1.1;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="280" />
+            </Array>
+            <mxPoint x="280" y="310" as="sourcePoint" />
+            <mxPoint x="440" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-59" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-40" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-33" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="410" y="380" as="sourcePoint" />
+            <mxPoint x="570" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-60" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-44" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1.003;entryY=0.161;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-43" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="290" y="480" as="sourcePoint" />
+            <mxPoint x="450" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-61" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-13" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.412;exitY=1.231;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="BGNALpCuS_oQVn72QMfp-48" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="340" />
+            </Array>
+            <mxPoint x="210" y="420" as="sourcePoint" />
+            <mxPoint x="370" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-62" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-16" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.456;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="BGNALpCuS_oQVn72QMfp-48" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="600" />
+            </Array>
+            <mxPoint x="200" y="420" as="sourcePoint" />
+            <mxPoint x="360" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-63" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-21" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.119;exitY=1.146;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.006;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-49" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="320" />
+              <mxPoint x="440" y="520" />
+            </Array>
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="530" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-64" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-21" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.641;exitY=1.054;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.62;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-32" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="530" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-65" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-16" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.682;exitY=1.185;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.359;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-32" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="530" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGNALpCuS_oQVn72QMfp-66" edge="1" parent="1" source="BGNALpCuS_oQVn72QMfp-13" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.48;exitY=1.069;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.103;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" target="BGNALpCuS_oQVn72QMfp-32" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="530" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
